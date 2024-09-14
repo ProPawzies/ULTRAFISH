@@ -41,7 +41,7 @@ public class GameAssets
     };
 
     /// <summary> List of internal names of all fishes. </summary>
-    public static readonly string[] Fishies =
+    public static readonly string[] Fishes =
     {
         "Funny Fish!!!", "pitr fish", "Trout", "Amid Efil Fish", "Dusk Chomper",
         "Bomb Fish", "Gib Eyeball Fish", "IronLungFish", "Dope Fish", "Fish Stick",
@@ -49,7 +49,7 @@ public class GameAssets
     };
 
     /// <summary> List of internal names of all fishes. </summary>
-    public static readonly string[] FishiesButReadable =
+    public static readonly string[] FishesButReadable =
     {
         "Friend", "Pitr", "Trout", "Metal", "Chomper",
         "Bomb", "Eyeball", "Frog", "Dope", "Stick",
