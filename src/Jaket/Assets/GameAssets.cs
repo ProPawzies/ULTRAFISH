@@ -63,10 +63,10 @@ public class GameAssets
     public static GameObject Item(string name) => AssetHelper.LoadPrefab($"Assets/Prefabs/{(name.StartsWith(".") ? $"Fishing/{name.Substring(1)}" : $"Items/{name}")}.prefab");
 
     /// <summary> Loads a dev plushy prefab by name. </summary>
-    public static GameObject Bait(string name) => Prefab($"Fishing/{name}");
+    public static GameObject Bait(string name) => AssetHelper.LoadPrefab($"Fishing/{name}.prefab");
 
     /// <summary> Loads a dev plushy prefab by name. </summary>
-    public static GameObject Fish(string name) => Prefab($"Fishing/Fishes/{name}");
+    public static GameObject Fish(string name) => AssetHelper.LoadPrefab($"Fishing/Fishes/{name}.prefab");
 
     /// <summary> Loads a fish prefab by name. </summary>
     public static GameObject Plushy(string name) => AssetHelper.LoadPrefab($"Assets/Prefabs/Items/DevPlushies/DevPlushie{(name.StartsWith(".") ? name.Substring(1) : $" ({name})")}.prefab");
@@ -81,7 +81,7 @@ public class GameAssets
     public static GameObject Shotgun() => AssetHelper.LoadPrefab("Assets/Prefabs/Weapons/Pickups/ShotgunPickUp.prefab");
 
     /// <summary> Loads the fish pickup prefab. </summary>
-    public static GameObject FishTemplate() => Prefab("Fishing/Fish Pickup Template");
+    public static GameObject FishTemplate() => AssetHelper.LoadPrefab("Fishing/Fish Pickup Template.prefab");
     
     /// <summary> Loads a swordsmachine material by name. </summary>
     public static void SwordsMaterial(string name, Renderer output) =>
