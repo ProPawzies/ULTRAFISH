@@ -56,6 +56,20 @@ public class BestiaryPatch
             id: "YetAnotherJaketFork.f1",
             name: "F1",
             desc: "Created by Idlecreeper"
+       
+        var vFishEntry = BestiaryEntry.Load("VFish");
+        BestiaryEntry.Insert(
+            ref ___objects,
+            index: 18,
+            preview: DollAssets.CreatePreviewWithSkin(
+                DollAssets.WingTextures[(int)Team.Fish],
+                DollAssets.BodyTextures[(int)Team.Fish]
+            ),
+            icon: DollAssets.Icons[1],
+
+            id: "ULTRAFISH.vFish",
+            name: "Shorky",
+            entry: vFishEntry
         );
     }
 }
