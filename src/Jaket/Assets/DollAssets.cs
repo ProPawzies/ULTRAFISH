@@ -140,6 +140,7 @@ public class DollAssets
         LoadAsync<Sprite>("V3-icon", sprite => Icons[0] = sprite);
         LoadAsync<Sprite>("V4-icon", sprite => Icons[1] = sprite);
         LoadAsync<Sprite>("F1-icon", sprite => Icons[2] = sprite);
+        LoadAsync<Sprite>("VFish-icon", sprite => Icons[3] = sprite);
 
         LoadAsync<AudioMixer>("sam-audio", mix =>
         {
