@@ -68,7 +68,6 @@ public class BestiaryPatch
             icon: DollAssets.Icons[1],
 
             id: "ULTRAFISH.vFish",
-            name: "Shorky",
             entry: vFishEntry
         );
     }
