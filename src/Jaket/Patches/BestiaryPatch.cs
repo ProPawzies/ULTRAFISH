@@ -56,8 +56,10 @@ public class BestiaryPatch
             id: "YetAnotherJaketFork.f1",
             name: "F1",
             desc: "Created by Idlecreeper"
-       
+        );
+
         var vFishEntry = BestiaryEntry.Load("VFish");
+        
         BestiaryEntry.Insert(
             ref ___objects,
             index: 18,
