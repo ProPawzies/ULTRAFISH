@@ -64,8 +64,8 @@ public class BestiaryPatch
             ref ___objects,
             index: 18,
             preview: DollAssets.CreatePreviewWithSkin(
-                DollAssets.WingTextures[(int)Team.Fish],
-                DollAssets.BodyTextures[(int)Team.Fish]
+                DollAssets.WingTextures[(int)Team.VFish],
+                DollAssets.BodyTextures[(int)Team.VFish]
             ),
             icon: DollAssets.Icons[1],
 
