@@ -241,6 +241,10 @@ public class UIB
             case Team.RGB:
                 Text("RGB", img.transform, r.Text, black);
                 break;
+            
+            case Team.VFish:
+                Text("VFish", img.transform, r.Text, blue);
+                break;
 
             default: break;
         }
