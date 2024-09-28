@@ -26,7 +26,7 @@ public static class TeamExtensions
         Team.Red    => new( 1f, .2f, .1f),
         Team.Green  => new( 0f, .9f, .4f),
         Team.Blue   => new( 0f, .5f,  1f),
-        Team.VFish  => new( 0f, .9f,  1f),
+        Team.VFish  => new( 2f, .4f,  3f),
         Team.Pink   => new( 1f, .4f, .8f),
         Team.Purple => new(.7f,  0f,  1f),
         Team.Cyan   => new( 0f,  1f,  1f),
