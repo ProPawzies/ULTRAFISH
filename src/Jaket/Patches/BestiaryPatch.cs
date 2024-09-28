@@ -45,7 +45,7 @@ public class BestiaryPatch
 
         BestiaryEntry.Insert(
             ref ___objects,
-            index: 17,
+            index: 18,
 
             preview: DollAssets.CreatePreviewWithSkin(
                 DollAssets.WingTextures[(int)Team.Fraud],
@@ -62,12 +62,12 @@ public class BestiaryPatch
         
         BestiaryEntry.Insert(
             ref ___objects,
-            index: 18,
+            index: 17,
             preview: DollAssets.CreatePreviewWithSkin(
                 DollAssets.WingTextures[(int)Team.VFish],
                 DollAssets.BodyTextures[(int)Team.VFish]
             ),
-            icon: DollAssets.Icons[1],
+            icon: DollAssets.Icons[3],
 
             id: "ULTRAFISH.vFish",
             entry: vFishEntry
