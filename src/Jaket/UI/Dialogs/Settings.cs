@@ -104,6 +104,7 @@ public class Settings : CanvasSingleton<Settings>
         Pointer = GetKey("pointer", KeyCode.Mouse2);
         Spray = GetKey("spray", KeyCode.T);
         SelfDestruction = GetKey("self-destruction", KeyCode.K);
+        Spray = GetKey("spray", KeyCode.Y);
 
         DollAssets.Mixer?.SetFloat("Volume", TTSVolume / 2f - 30f);
     }
