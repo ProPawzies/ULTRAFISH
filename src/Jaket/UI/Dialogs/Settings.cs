@@ -28,14 +28,14 @@ public class Settings : CanvasSingleton<Settings>
 
     /// <summary> List of internal names of all key bindings. </summary>
     public static readonly string[] Keybinds =
-    { "chat", "scroll-messages-up", "scroll-messages-down", "lobby-tab", "player-list", "settings", "player-indicators", "player-information", "emoji-wheel", "pointer", "spray", "self-destruction" };
+    { "chat", "scroll-messages-up", "scroll-messages-down", "lobby-tab", "player-list", "settings", "player-indicators", "player-information", "emoji-wheel", "pointer", "spray", "self-destruction", "fish-mode" };
 
     /// <summary> Array with current control settings. </summary>
     public static KeyCode[] CurrentKeys => new[]
-    { Chat, ScrollUp, ScrollDown, LobbyTab, PlayerList, Settingz, PlayerIndicators, PlayerInfo, EmojiWheel, Pointer, Spray, SelfDestruction };
+    { Chat, ScrollUp, ScrollDown, LobbyTab, PlayerList, Settingz, PlayerIndicators, PlayerInfo, EmojiWheel, Pointer, Spray, SelfDestruction, FishMode };
 
     /// <summary> List of all key bindings in the mod. </summary>
-    public static KeyCode Chat, ScrollUp, ScrollDown, LobbyTab, PlayerList, Settingz, PlayerIndicators, PlayerInfo, EmojiWheel, Pointer, Spray, SelfDestruction;
+    public static KeyCode Chat, ScrollUp, ScrollDown, LobbyTab, PlayerList, Settingz, PlayerIndicators, PlayerInfo, EmojiWheel, Pointer, Spray, SelfDestruction, FishMode;
 
     /// <summary> Gets the key binding value from its path. </summary>
     public static KeyCode GetKey(string path, KeyCode def) => (KeyCode)pm.GetInt($"jaket.binds.{path}", (int)def);
@@ -104,7 +104,7 @@ public class Settings : CanvasSingleton<Settings>
         Pointer = GetKey("pointer", KeyCode.Mouse2);
         Spray = GetKey("spray", KeyCode.T);
         SelfDestruction = GetKey("self-destruction", KeyCode.K);
-        Spray = GetKey("spray", KeyCode.Y);
+        FishMode = GetKey("fish-mode", KeyCode.Y);
 
         DollAssets.Mixer?.SetFloat("Volume", TTSVolume / 2f - 30f);
     }
