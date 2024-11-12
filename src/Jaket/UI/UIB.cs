@@ -243,7 +243,7 @@ public class UIB
                 break;
             
             case Team.VFish:
-                Text("VFish", img.transform, r.Text, yellow);
+                Text("Fsh", img.transform, r.Text, silver);
                 break;
 
             default: break;
